@@ -1,26 +1,71 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-primary: #000000;
+  --bg-secondary: #050509;
+  --text-primary: #ffffff;
+  --text-muted: #9ca3af;
+  --accent: #5cc8ff;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Global background */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(92, 200, 255, 0.08), transparent 40%),
+    radial-gradient(circle at 80% 30%, rgba(120, 140, 255, 0.05), transparent 45%),
+    linear-gradient(180deg, #000000 0%, #050505 100%);
+  color: var(--text-primary);
+}
+
+/* Layout container */
+.container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4 {
+  color: var(--text-primary);
+}
+
+p {
+  color: var(--text-muted);
+}
+
+/* Glass card look */
+.glass {
+  background: rgba(15, 15, 20, 0.8);
+  backdrop-filter: blur(16px);
+  border-radius: 16px;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+/* Smooth scrolling + anchor offset (for navbar) */
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 90px; /* navbar height + margin */
+}
+
+.hero-text {
+  font-size: 3rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #8b5cf6, #22d3ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
 }
