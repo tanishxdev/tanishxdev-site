@@ -35,7 +35,7 @@ export default function CTA() {
           {/* Social links */}
           <div className="flex gap-5 text-lg text-[#9CA3AF]">
             <a
-              href="https://github.com/tanishkumardev"
+              href="https://github.com/tanishxdev"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white transition"
@@ -65,7 +65,7 @@ export default function CTA() {
             </a>
 
             <a
-              href="https://leetcode.com/u/tanish2_9/"
+              href="https://leetcode.com/u/tanishxdev/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white transition"
@@ -78,7 +78,6 @@ export default function CTA() {
       </div>
 
       {/* Footer line - centered & bottom */}
-
     </section>
   );
 }

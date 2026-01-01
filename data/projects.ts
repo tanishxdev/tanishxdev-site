@@ -23,7 +23,7 @@ export const projects: Project[] = [
     role: "Product thinking · Full-stack development",
     stack: "Next.js · React · Node.js · TypeScript",
     live: "https://calmind-beta.vercel.app/",
-    code: "https://github.com/TanishKumarDev/calmind",
+    code: "https://github.com/tanishxdev/calmind",
     featuredOrder: 1, // primary quality project
   },
 
@@ -38,27 +38,27 @@ export const projects: Project[] = [
       "Built scenario-based prompts and feedback buckets so users can practice answers, pacing and clarity under interview-like pressure.",
     role: "Full-stack development",
     stack: "Next.js · OpenAI API · TypeScript",
-    live: "https://interviewprepwithai-tanishxdev.vercel.app/",
-    code: "https://github.com/TanishKumarDev/interview.me",
+    live: "https://interviewmedev.vercel.app/",
+    code: "https://github.com/tanishxdev/interview.me",
     featuredOrder: 2, // secondary quality project
   },
-  
+
   {
     id: "gpt-lite",
     title: "GPT Lite — Minimal AI Chat Interface",
     description:
       "A clean, distraction-free AI chat interface for quick experiments and personal workflows.",
-      problem:
+    problem:
       "Most AI dashboards are heavy and cluttered. For quick idea exploration, the UI gets in the way.",
     approach:
-    "Kept the interface minimal, keyboard-first and dark by default so users can focus on the conversation only.",
+      "Kept the interface minimal, keyboard-first and dark by default so users can focus on the conversation only.",
     role: "Frontend and UX",
     stack: "Next.js · React · TypeScript",
     live: "https://gp-tlite.vercel.app/",
-    code: "https://github.com/TanishKumarDev/gpt-lite",
+    code: "https://github.com/tanishxdev/gpt-lite",
     featuredOrder: 3, // tertiary quality project
   },
-  
+
   {
     id: "studyflow",
     title: "StudyFlow — Focus & Productivity Tool",
