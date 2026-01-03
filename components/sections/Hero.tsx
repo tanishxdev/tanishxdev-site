@@ -84,7 +84,7 @@ export default function Hero() {
           </a>
 
           <a
-            href="/resume.pdf"
+            href="https://drive.google.com/file/d/1bRrG4lHS4DOKdq9njm75DmMUiQkU7tef/view"
             target="_blank"
             className="hidden sm:inline text-sm text-gray-400 hover:text-white transition underline underline-offset-4"
           >
